@@ -1,4 +1,6 @@
-import Navigation from "../../component/navigation";
+export const metadata = {
+  title: "Child1",
+};
 
 export default function Child1() {
   return (
