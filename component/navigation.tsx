@@ -12,7 +12,7 @@ export default function Navigation() {
           {path === "/" ? "🔥" : ""}
         </li>
         <li>
-          <Link href="child1">Child1</Link>
+          <Link href="/child1">Child1</Link>
           {path === "/child1" ? "🔥" : ""}
         </li>
       </ul>
