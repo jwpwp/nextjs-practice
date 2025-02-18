@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Movie from "../../component/movie";
 
 export const metadata = {
   title: "Home",
@@ -17,9 +17,12 @@ export default async function HomePage() {
   return (
     <div>
       {movies.map((movie) => (
-        <li key={movie.id}>
-          <Link href={`/movies/${movie.id}`}>{movie.title}</Link>
-        </li>
+        <Movie
+          key={movie.id}
+          id={movie.id}
+          poster_path={movie.poster_path}
+          title={movie.title}
+        />
       ))}
     </div>
   );
